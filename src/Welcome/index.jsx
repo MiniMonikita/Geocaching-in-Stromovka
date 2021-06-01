@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import logo from "./transparent-logo--with-smile.png";
+import logo from "../img/logo-welcome.png";
 import "./style.css";
 
 const Welcome = ({ usernameW }) => {

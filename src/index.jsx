@@ -60,8 +60,8 @@ const App = () => {
           </Route>
           {/* <Route exact path="/mapmain">
             <MapMain usernameW={username} />
-          </Route>
-          <Route exact path="/mapq1">
+          </Route> */}
+          {/* <Route exact path="/mapq1">
             <MapQ1 />
           </Route>
           <Route exact path="/geolocation">

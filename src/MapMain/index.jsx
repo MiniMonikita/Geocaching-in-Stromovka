@@ -10,7 +10,7 @@ import {
   ZoomControl,
 } from "react-mapycz";
 import "./style.css";
-import logo from "./kids-with-map.png";
+import logo from "../img/logo-kids.png";
 import useGeolocation from "react-hook-geolocation";
 
 const MapMain = ({ usernameW }) => {

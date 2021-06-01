@@ -20,7 +20,7 @@
 
 .paragraph-rules {
   /* zmenen z center */
-  text-align: justify;
+  text-align: center;
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
