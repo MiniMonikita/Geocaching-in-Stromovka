@@ -92,8 +92,8 @@ const Map00 = () => {
               type: "raster",
               tiles: ["https://mapserver.mapy.cz/base-m/{z}-{x}-{y}"],
               tileSize: 256,
-              attribution:
-                'Mapové podklady od <a target="_top" rel="noopener" href="https://mapy.cz/">Seznam.cz</a> a <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>.',
+              // attribution:
+              //   'Mapové podklady od <a target="_top" rel="noopener" href="https://mapy.cz/">Seznam.cz</a> a <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>.',
             },
           },
           layers: [
