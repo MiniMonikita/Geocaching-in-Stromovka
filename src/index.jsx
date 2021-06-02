@@ -7,6 +7,7 @@ import Rules from "./Rules";
 import Username from "./Username";
 import Welcome from "./Welcome";
 import Essentials from "./Essentials";
+import Map00 from "./Map00";
 // import MapMain from "./MapMain";
 // import MapQ1 from "./MapQ1";
 // import ComponentWithGeolocation from "./ComponentWithGeolocation";
@@ -40,14 +41,14 @@ const App = () => {
         </nav>
 
         <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route exact path="/about">
             <About />
           </Route>
           <Route exact path="/rules">
             <Rules />
-          </Route>
-          <Route exact path="/">
-            <Home />
           </Route>
           <Route exact path="/username">
             <Username helloUsername={handleHello} />
@@ -57,6 +58,9 @@ const App = () => {
           </Route>
           <Route exact path="/essentials">
             <Essentials />
+          </Route>
+          <Route exact path="/map00">
+            <Map00 />
           </Route>
           {/* <Route exact path="/mapmain">
             <MapMain usernameW={username} />

@@ -25,7 +25,7 @@ const Rules = () => {
       {/* WILL BE ABLE TO START GAME only if USERNAME created else will be
       redirected to USERNAME PAGE */}
 
-      <Link style={{ textDecoration: "none" }} to="/mapmain">
+      <Link style={{ textDecoration: "none" }} to="/map00">
         <button>Start Game</button>
       </Link>
     </>
