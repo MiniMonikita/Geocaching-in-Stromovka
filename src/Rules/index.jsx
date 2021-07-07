@@ -7,7 +7,7 @@ const Rules = () => {
     <>
       <h2 className="subheading">Geocache Rules</h2>
       <div className="paragraph-rules">
-        <p> &#8226; Starting position: 50.1047600N, 14.4313575E</p>
+        <p> &#8226; Starting positionnn: 50.1047600N, 14.4313575E</p>
         <p>
           &#8226; There are 8 checkpoints, questions are related to the location
           you are at.

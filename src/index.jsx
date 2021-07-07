@@ -62,15 +62,6 @@ const App = () => {
           <Route exact path="/map00">
             <Map00 />
           </Route>
-          {/* <Route exact path="/mapmain">
-            <MapMain usernameW={username} />
-          </Route> */}
-          {/* <Route exact path="/mapq1">
-            <MapQ1 />
-          </Route>
-          <Route exact path="/geolocation">
-            <ComponentWithGeolocation />
-          </Route> */}
         </Switch>
       </div>
     </Router>

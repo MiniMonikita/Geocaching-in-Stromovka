@@ -14,7 +14,6 @@ const About = () => {
         <a href="https://www.czechitas.cz/cs/">
           Digital Academy with Czechitas
         </a>
-        .
       </p>
     </>
   );
