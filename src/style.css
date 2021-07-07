@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  /* font-size: 1.5rem; */
   font-family: "Bangers", sans-serif;
   background-image: url("./img/background.jpg");
   background-size: cover;
@@ -22,17 +21,18 @@ body {
   min-height: -webkit-fill-available;
   max-width: 480px;
   margin: 0 auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .container {
   margin: 0 auto;
-  /* border: 1px solid black; */
+  height: 100vh;
 }
 
 .nav-ul {
   font-size: 1.5rem;
+  margin-top: 15px;
   background-size: 50px 50px;
   background-repeat: no-repeat;
   display: flex;
@@ -42,9 +42,46 @@ body {
   justify-content: space-around;
 }
 
-.nav-ul li a {
+.nav-ul li {
   display: block;
   color: black;
-  text-decoration: none;
   padding: 5px 5px;
+}
+
+.nav-ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn--rules {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.rules {
+  position: relative;
+  text-align: left;
+  width: 300px;
+  min-width: 300px;
+  max-width: 70%;
+  padding: 0px 15px 40px;
+  font-size: 1.2rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  border: 1px solid black;
+  background-color: #f0f0e4;
+}
+
+.btn--close {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px;
+  padding: 5px 30px;
+  font-size: 1rem;
+  background-color: #e1d3b6;
+  font-family: "PT Sans Narrow";
+  font-weight: bold;
 }

@@ -1,21 +1,21 @@
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.jsx',
-  devtool: 'eval-source-map',
+  mode: "development",
+  entry: "./src/index.jsx",
+  devtool: "eval-source-map",
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js",
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, "dist"),
     writeToDisk: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
   module: {
     rules: [
@@ -23,24 +23,24 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: ["@babel/preset-env", "@babel/preset-react"],
           },
         },
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name]-[hash:6].[ext]',
-              outputPath: 'img',
+              name: "[name]-[hash:6].[ext]",
+              outputPath: "img",
             },
           },
         ],
@@ -50,9 +50,9 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
-        { from: 'src/favicon.ico', to: '', noErrorOnMissing: true },
-        { from: 'src/index.html', to: '' },
+        { from: "src/assets", to: "assets", noErrorOnMissing: true },
+        { from: "src/favicon.ico", to: "", noErrorOnMissing: true },
+        { from: "src/index.html", to: "" },
       ],
     }),
   ],

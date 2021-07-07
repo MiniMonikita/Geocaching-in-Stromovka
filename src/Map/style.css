@@ -1,0 +1,49 @@
+.ovladani {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.ovladani > * {
+  position: static !important;
+}
+
+.score {
+  border: 2px solid #af7f2c;
+  background-color: #f7b239;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  margin: 0px auto 5px;
+  padding: 12px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #d8d8d8cb;
+  border: 1px solid #a9a7a7cb;
+  color: rgba(0, 0, 0, 0.571);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.btn--on {
+  background-color: #098256d2;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+.timer {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
